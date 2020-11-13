@@ -22,12 +22,12 @@
                 <input type="text" name="img" class="form-control" placeholder="Insert the image URL here">
             </div>
             <div class="form-group">
-                <label for="Author-name">Author First Name:</label>
-                <input type="text" name="Author-name" class="form-control" placeholder="Insert the authors first name here">
+                <label for="author-name">Author First Name:</label>
+                <input type="text" name="author-name" class="form-control" placeholder="Insert the authors first name here">
             </div>
             <div class="form-group">
-                <label for="Author-surname">Author Surname:</label>
-                <input type="text" name="Author-surname" class="form-control" placeholder="Insert the authors surname name here">
+                <label for="author-surname">Author Surname:</label>
+                <input type="text" name="author-surname" class="form-control" placeholder="Insert the authors surname name here">
             </div>
             <div class="form-group">
                 <label for="ISBN">ISBN 13 Key:</label>
@@ -43,7 +43,7 @@
             </div>
             <div class="form-group">
                 <label for="publisher-name">Publisher Name:</label>
-                <input type="text" name="title" class="form-control" placeholder="Insert the publisher name here">
+                <input type="text" name="publisher-name" class="form-control" placeholder="Insert the publisher name here">
             </div>
             <div class="form-group">
                 <label for="p-address">Publisher address:</label>
