@@ -4,7 +4,6 @@ require_once 'actions/db_connect.php';
 
 if ($_GET['id']) {
     $id = $_GET['id'];
-
     $sql = "SELECT * FROM media
    INNER JOIN author on media.FK_ID_A = author.ID_A
    INNER JOIN publisher on media.FK_ID_P = publisher.ID_P";
@@ -51,11 +50,11 @@ if ($_GET['id']) {
             </div>
             <div class="form-group">
                 <label for="description">Media Description:</label>
-                <input type="text" name="descripton" class="form-control" placeholder="Add a short description (max 250 char)" value="<?php echo $data['descripton'] ?>">
+                <input type="text" name="descripton" class="form-control" placeholder="Add a short description (max 250 char)" value="<?php echo $data['description'] ?>">
             </div>
             <div class="form-group">
                 <label for="date">Publishing Date</label>
-                <input type="date" name="date" class="form-control" value="<?php echo $data['date'] ?>">
+                <input type="date" name="date" class="form-control" value="<?php echo $data['publish_date'] ?>">
             </div>
             <div class="form-group">
                 <label for="publisher-name">Publisher Name:</label>
@@ -90,12 +89,13 @@ if ($_GET['id']) {
                 </select>
             </div>
 
-            <input type="hidden" name="id" value="<?php echo $data['id'] ?>" />
+           
+            <input type="hidden" name="id" value="<?php echo $data['ID_M'] ?>" />
             <button type="submit">Save Changes</button>
             <a href="index.php">
                 <button type="button">Back</button>
             </a>
-
+            <?php var_dump($id);?>
         </form>
 
 

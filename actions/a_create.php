@@ -7,7 +7,7 @@ if ($_POST) {
     $title = $_POST['title'];
     $img = $_POST['img'];
     $ISBN = $_POST['ISBN'];
-    $descripton = $_POST['descripton'];
+    $descripton = $_POST['description'];
     $date = $_POST['date'];
     $type = $_POST['type'];
     $state = $_POST['state'];
