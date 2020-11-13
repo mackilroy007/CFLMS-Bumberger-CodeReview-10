@@ -35,7 +35,7 @@
             </div>
             <div class="form-group">
                 <label for="description">Media Description:</label>
-                <input type="text" name="descripton" class="form-control" placeholder="Add a short description (max 250 char)">
+                <input type="text" name="description" class="form-control" placeholder="Add a short description (max 250 char)">
             </div>
             <div class="form-group">
                 <label for="date">Publishing Date</label>

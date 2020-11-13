@@ -7,7 +7,8 @@ if ($_POST) {
     $title = $_POST['title'];
     $img = $_POST['img'];
     $ISBN = $_POST['ISBN'];
-    $descripton = $_POST['description'];
+    $description = $_POST['description'];
+    var_dump($description);
     $date = $_POST['date'];
     $type = $_POST['type'];
     $state = $_POST['state'];
@@ -40,12 +41,14 @@ if ($_POST) {
     }
 
     // media
-    $sql = "INSERT INTO media (title, img, FK_ID_A, ISBN, descripton, publish_date, FK_ID_P type, state) 
-   VALUES ('$title', '$img', (SELECT MAX(ID_A) FROM author), '$ISBN', '$descripton', $date', (SELECT MAX(ID_P) FROM publisher), '$type', '$state')";
+    $sql = "INSERT INTO media (title, img, FK_ID_A, ISBN, description, publish_date, FK_ID_P, type, state) 
+   VALUES ('$title', '$img', (SELECT MAX(ID_A) FROM author), '$ISBN', '$description',
+    '$date', (SELECT MAX(ID_P) FROM publisher), '$type', '$state')";
     if ($connect->query($sql) === TRUE) {
         echo "<p>New media entry successfully created</p>";
         echo "<a href='../create.php'><button type='button'>Back</button></a>";
         echo "<a href='../index.php'><button type='button'>Home</button></a>";
+        var_dump($sql);
     } else {
         echo "Error " . $sql . ' ' . $connect->connect_error;
     }
