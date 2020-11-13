@@ -4,6 +4,7 @@ require_once 'actions/db_connect.php';
 
 if ($_GET['id']) {
     $id = $_GET['id'];
+    // connect database with entry
     $sql = "SELECT * FROM media
    INNER JOIN author on media.FK_ID_A = author.ID_A
    INNER JOIN publisher on media.FK_ID_P = publisher.ID_P";
