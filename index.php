@@ -13,11 +13,11 @@
 
   <meta charset="UTF-8">
   <title>Library content</title>
-<style>
-  img{
-    height: 10em;
-  }
-</style>
+  <style>
+    img {
+      height: 10em;
+    }
+  </style>
 
 </head>
 
@@ -71,7 +71,9 @@
                    </tr>";
           }
         } else {
-          echo  "<tr><td colspan='5'><center>No Data Avaliable</center></td></tr>";
+          echo  "<tr scope='row'>
+                    <td colspan='12'><center>No Data Avaliable</center></td>
+                </tr>";
         }
         ?>
       </tbody>
