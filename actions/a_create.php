@@ -22,7 +22,7 @@ if ($_POST) {
     $pSize = $_POST['p-size'];
 
     // author
-    $sql = "INSERT INTO author (name, surname) 
+    $sql = "INSERT INTO author (fName, surname) 
         VALUES ('$aName', '$aSurname')";
     if ($connect->query($sql) === TRUE) {
         echo "<p>New author successfully created</p>";
